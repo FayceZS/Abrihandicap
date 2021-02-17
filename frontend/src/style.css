@@ -1,0 +1,772 @@
+@font-face {
+    font-family: "Century gothic regular";
+    src: url("../src/Fonts/GOTHIC.TTF") format("ttf");
+    font-family : 'Calibri corps';
+    src : url('../src/Fonts/Calibri.ttf') format("ttf");
+   }
+
+
+body{
+    width : 100%;
+    height : 100%;
+    padding-top : 180px;
+}
+
+
+h2{
+    font-family : 'Century gothic regular';
+}
+
+h3{
+    font-family : 'Century gothic regular'; 
+}
+
+p{
+    font-family : 'Calibri corps, Fira sans, Roboto';
+}
+
+
+
+#menuLogo{                                          /*CSS concernant le menu*/
+    height : 130px;
+    width : 280px; 
+}
+
+.nav{
+    height : 150px;
+    /* background-color : #1c3248; */
+    background-color : #00AFE8;
+    display : flex;
+    justify-content: space-around;
+}
+
+.dropdown{
+    width : 50%;
+    display : flex;
+    
+}
+
+.dropdown>button{
+    background-color : #00AFE8!important;
+    font-size: 40px;
+    margin : auto;
+}
+
+.dropdown-menu{
+    background-color : #00AFE8!important;
+}
+
+#navDropdown{
+    display : none;
+}
+
+.nav1{
+   color : white;
+}
+
+
+
+.nav1:hover{
+    border : none;
+    scale: 1.1;
+    transition : 0.5s;
+}
+
+.nav2{
+    color : rgb(40, 19, 133);
+}
+
+.nav2:hover{
+    scale: 1.3;
+    transition : 0.5s;
+}
+
+.nav3{
+
+    color : rgb(228, 41, 41);
+}
+
+
+
+.nav3:hover{
+    color : rgb(228, 41, 41);
+    scale: 1.3;
+    transition : 0.5s;
+}
+
+
+.nav4{
+    color : #E8B72C;
+    font-weight: bolder;
+}
+
+.nav4:hover{
+    color : #E8B72C;;
+    scale: 1.3;
+    transition : 0.5s;
+}
+
+.nav5{
+    color : white;
+}
+
+.nav5:hover{
+    color : white;
+    scale: 1.3;
+    transition : 0.5s;
+}
+
+.nav-item{
+    display:flex;
+    font-weight: bolder;
+    font-family: 'Fira Sans', sans-serif;
+}
+
+.nav-link{
+    margin : auto;
+    /* padding : 5px;
+    padding-left : 5px;
+    padding-right : 5px; */
+    font-size : 28px;
+    font-weight: bolder;
+}
+
+.fa-home{
+    font-size : 40px!important;
+}
+                                    /*CSS concernant la page d'accueil*/
+
+
+.firstComponent{
+    margin-top : 180px!important;
+    border-radius: 30px;
+}
+
+#donateComponent {
+    background-color : #00AFE8;
+    width : auto;
+    max-width : 750px;
+    margin : auto;
+    padding : 40px;
+    
+}
+
+#donateComponent>h2{
+    color : white;
+    font-size : 40px;
+    font-weight: bolder;
+}
+
+
+#amountInputForm{
+    display : flex;
+    justify-content: space-between;
+}
+
+.radioInput{
+    margin : auto;
+    margin-right : 5px;
+    margin-left : 5px;
+    height : 20px;
+    width : 20px;
+}
+
+.amountValue{
+    color : white;
+    font-size : 25px;
+    font-weight : bold;
+}
+
+#donateComponent>p{
+    color : white;
+    font-size : 30px;
+    font-family: 'Calibri corps'!important;
+}
+
+
+
+.carousel{                                              
+     height : auto;
+    margin : auto;
+    margin-top : 30px;
+    border-right: none;
+    background-color: white!important;
+    background : no-repeat;
+    background-size : 400px 300px;
+    background-position: left 20px center;
+    
+    box-shadow: 0px 1px 24px 0px rgba(50, 50, 50, 0.62);
+
+
+    
+}
+
+@keyframes crescendo {
+    0%   {transform: scale(1);}
+    100% {transform: scale(1.3);}
+  }
+
+
+
+.carousel-caption{
+    background-color: #cccc;;
+    width:480px;
+    height : auto;
+    margin : auto;
+    padding : 5px;
+    z-index : 1;
+    margin-bottom : 30px;
+    /* animation: crescendo 1s forwards 1 ease-in; */
+    border-radius: 30px;
+    display : flex;
+
+    
+}
+
+.carousel-caption>h3{
+    color : #435E91;
+    font-weight : 900;
+    font-size : 45px;
+    width : 100%;
+    height : auto;
+    margin : auto;
+    padding : 30px;
+    
+}
+
+
+
+.carousel-caption>p{
+    color : black;
+    font-weight : 700;
+    font-size : 24px;
+    padding : 10px;
+    margin : 0;
+    
+   
+}
+
+.carousel-control-prev-icon{
+    background-color : black!important;
+    height : 80px!important;
+    width:80px;
+    padding : 10px;
+    display: none;
+}
+
+.carousel-control-next-icon{
+    background-color : black!important;
+    height : 80px!important;
+    width:80px;
+    padding : 10px;
+    display: none;
+}
+
+#firstCarousel>.carousel-indicators>li{
+    cursor: default;
+}
+
+.imgCarousel{
+    height : 650px;
+    width : 100%;
+    margin : auto;
+    opacity : 1;
+    z-index : 999;
+    border-left : 1px solid grey;
+    border-right : 1px solid grey;
+}
+
+#firstArticleContainer{
+    width : 90%;
+    border-radius: 10px;
+    background-color : white;
+    min-height: 600px;
+    border-top : 1px solid grey;
+    border-bottom : 1px solid grey;
+    padding: 50px;
+    text-align: center;
+    margin : auto;
+    margin-bottom: 80px;
+    box-shadow: 0px 1px 24px 0px rgba(50, 50, 50, 0.62);
+    white-space: pre-wrap;
+    padding-top : 150px;
+    background: rgb(240,88,73);
+background: linear-gradient(90deg, rgba(240,88,73,0.5) 0%, rgba(232,198,72,0.5) 61%, rgba(37,205,166,0.5) 100%);
+}
+
+
+#firstArticleContainer>h2{
+    font-size : 48px;
+    font-weight: bolder;
+    color : rgb(228, 41, 41);
+}
+
+.articleContainerText{
+    font-size : 26px;
+    font-family : "Calibri corps";
+    font-weight : bolder;
+    color : rgb(40, 19, 133);
+}
+
+#articleContainerHome {
+    width: 80%;
+    min-height: 500px;
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+    background-color: white;
+    box-shadow: 0px 1px 24px 0px rgba(50, 50, 50, 0.62);
+    border-radius: 30px;
+    padding : 50px;
+    white-space: pre-wrap;
+    text-align: left;
+    padding-top: 150px;
+}
+
+#articleContainerHome>h2{
+    margin : auto;
+    font-size : 48px;
+    font-weight : bold;
+    margin-bottom : 40px;
+    color : #E8B72C;
+    
+}
+
+#articleContainerHome>p{
+    font-size : 22px;
+    
+    margin-top: 30px;
+}
+
+
+
+
+
+
+
+                            /*CSS concernant les cartes de la page d'accueil*/
+
+#HomeCards{
+    margin-top : 50px;
+    padding-top : 60px;
+    padding-bottom: 60px;
+    border-top: 1px solid grey;
+    background-color: white;
+    display : flex;
+    flex-direction: column;
+    
+}
+
+
+
+.cardContainer{
+    margin-top:15px!important;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-bottom : 30px;
+    background-color: white;
+    border-top : 1px solid grey;
+    border-bottom: 1px solid grey;
+    background: rgb(240,88,73);
+background: linear-gradient(90deg, rgba(240,88,73,0.9210871848739496) 0%, rgba(67,94,145,0.8902748599439776) 33%, rgba(232,198,72,0.8846726190476191) 61%, rgba(37,205,166,0.9182860644257703) 100%);
+}
+
+.card{
+    width : 700px;
+    height : 100%;
+    margin : auto;
+    justify-content: center!important;
+    align-content: center!important;
+    /* border-top-left-radius: 30px;
+    border-top-right-radius: 45px;
+    border-bottom-right-radius: 30px;
+    border-bottom-left-radius: 5px; */
+    /* box-shadow: -6px 5px 23px rgba(0, 0, 0, 0.9)  ;  */
+    /* margin-top : 20px;
+    margin-bottom: 20px; */
+
+}
+
+.card-body{
+    display:flex!important;
+    flex-direction: column!important;
+    justify-content: center;
+    padding : 0px;
+    height : 100%;
+}
+
+.cardImgs{
+    height : 100%;
+    width: 100%;
+    margin : auto;
+    /* overflow: hidden;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 45px;
+    border-bottom-right-radius: 30px;
+    border-bottom-left-radius: 5px; */
+}
+
+.card-text{
+    height : auto;
+    font-size : 20px;
+    font-weight : 500;
+    color : white!important;
+    background-color : #00AFE8;
+    padding : 35px;
+    width: 100%;
+   
+    /* border-top-left-radius: 30px;
+border-top-right-radius: 45px; */
+    border-bottom: 1px solid black;
+    overflow: hidden;
+    position : absolute;
+    top : 0px;
+}
+
+.card-link{
+    position : absolute;
+    bottom : 5px;
+    align-self: center;
+}
+
+svg{
+    width : 50px;
+    height : 50px;
+}
+
+                            /*CSS Equipe*/
+
+
+#titleTeam{
+    font-size : 50px!important;
+    font-weight: bolder;
+    text-align: center;
+    width : max-content;
+    border : 1px solid black;
+    margin : auto;
+    margin-top : 40px;
+    padding : 22px;
+    border-radius: 12px;
+    box-shadow: 0px 1px 24px 0px rgba(50, 50, 50, 0.62);
+}    
+
+
+#carouselTeam{
+    padding-top : 150px;
+}
+
+
+.imgTeamCarousel{
+    height : auto;
+    width : auto;
+    margin : auto;
+    max-height :550px;
+   
+}
+
+#teamCarousel{
+    margin-top : 50px;
+    margin-bottom : 100px;
+}
+
+
+
+                            /*CSS concernant le footer*/
+
+ footer {
+    border-top: 1px solid black;
+    bottom : 0px;
+    padding: 5px;
+    margin-top: 0px!important;
+    background-color: white!important;
+    background : no-repeat;
+    background-size : 330px 180px;
+    background-position: left 40px center;
+}
+
+.list-styled>a{
+    font-size : 21px;
+    font-weight: bolder;
+}
+
+.list-styled>p{
+    font-size : 23px;
+    font-weight: bolder;
+    margin : 0;
+}
+
+.logoFooter{
+    width : 350px;
+    height: 230px;
+    z-index : -1;
+
+}
+
+.footerComponent{
+    display : flex;
+    justify-content: space-around;
+}
+
+.list-unstyled>a{
+    color : black!important;
+}
+
+.footerCategories{
+    display : flex;
+    justify-content: space-around;
+}
+
+#footerIconContainer{
+    display : flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height : 150px;
+}
+
+.footerIcons{
+    height : 40px;
+    width : 40px;
+}
+
+#liens{
+    font-weight : bolder;
+    font-size: 26px;
+}
+
+#presse{
+    color : #435E91;
+}
+
+#contact{
+    color : #25CDA6;
+}
+
+#newsletter{
+    color : #f05849;
+}
+
+#rejoindre{
+    color : #E8B72C;
+}
+
+#containerMenuIcon{
+    width : 200px!important;
+}
+#menuIcon{
+    height : 140px;
+    width : 140px;
+    align-self: flex-end;
+}
+
+#copyright{
+    font-weight : bolder;
+    font-size : 20px;
+    color : #00AFE8;
+}
+
+
+                                /*CSS page contact formulaire*/
+
+
+#contactContainer{
+    width : 100vw;
+    height : 100vh;
+}
+
+#contactContainer>form{
+}
+
+#formContact{
+    margin : auto;
+    margin-top : 180px;
+    width : 70%;
+    height : 600px;
+    padding : 40px;
+    display : flex;
+    flex-direction: column;
+    justify-content: space-around;
+    
+    border : 1px solid #00AFE8;
+
+}
+
+#formContact>.form-group{
+    display : flex;
+    flex-direction: column;
+    font-size : 20px;
+    font-weight: bold;
+    font-family: "Calibri corps";
+}
+
+#message{
+    height : 300px;
+}
+
+#formContact>button{
+    color : white;
+    font-weight: bold;
+    background-color: #00AFE8;
+    padding : 10px;
+    border-radius : 15px;
+    font-size: 20px;
+    box-shadow: 5px 5px 5px 0px rgba(40,19,133,0.5);
+    margin : auto;
+    transition: 0.5s;
+
+}
+
+#formContact>button:hover{
+    top : 5px;
+    box-shadow: 0px 0px 5px 5px rgba(10,19,133,0.75);
+}
+
+@media all and (max-width : 1025px){
+
+    .nav-link{
+        margin : auto;
+        /* padding : 5px;
+        padding-left : 5px;
+        padding-right : 5px; */
+        font-size : 20px;
+        font-weight: bold;
+    }
+
+}
+    @media all and (max-width : 769px){
+
+        #navDropdown{
+            display: flex;
+        }
+
+        #navLarge{
+            display : none;
+        }
+
+
+        .nav-item{
+            width : 50%;
+            margin-right: 0px!important;
+            flex :none!important;
+            
+        }
+
+        .nav-item>a{
+            font-size: 28px;
+        }
+
+        .card{
+            width : 500px;
+        }
+
+        .card-text{
+            padding : 10px;
+            width : 475px;
+            font-weight: 400;
+            word-wrap: wrap;
+        }
+
+        #videoPlayer{
+            width : 100%!important;
+        }
+    }
+
+    @media all and (max-width : 426px){
+
+        body{
+            display : flex;
+            flex-direction: column;
+            max-width : 100vw;
+        }
+
+        #navDropdown{
+            max-width: 100vw;
+        }
+        
+        .dropdown>button{
+            font-size : 20px;
+        }
+
+        #donateComponent{
+            width : 100%;
+        }
+
+        #menuLogo{
+            width : 120px;
+            height : 100px;
+        }
+
+        #amountInputForm{
+            flex-direction: column;
+        }
+
+        .carousel-item{
+            margin : 0px!important;
+        }
+
+        .carousel-caption{
+            width : 280px;
+            right : 0!important;
+            left : 0!important;
+        }
+
+        .carousel-caption>h3{
+            font-size : 20px;
+        }
+
+        .imgCarousel{
+            height : 300px;
+        }
+
+        #firstArticleContainer{
+            text-align: left;
+            width : 100%;
+        }
+
+        .articleContainerText{
+            text-align: left;
+            font-size : 20px;
+            margin-bottom : 35px!important;
+        }
+
+        .secondCarouselButton{
+            display : none;
+        }
+
+        .cardContainer>div{
+            padding : 10px!important;
+        }
+
+        .card-text{
+            font-size : 18px;
+            height : 150px;
+            width : 300px;
+            text-align: left;
+        }
+        
+        #titleTeam{
+            font-size : 25px!important;
+        }
+
+        .imgTeamCarousel{
+            height : 300px;
+            width : 300px;
+        }
+
+        footer{
+            display: flex;
+            flex-direction: column;
+        }
+
+        #containerMenuIcon{
+            width : 100%!important;
+        }
+
+        .list-styled{
+            list-style: none;
+        }
+
+        
+
+        
+    }
