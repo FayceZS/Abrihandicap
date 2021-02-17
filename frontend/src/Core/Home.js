@@ -49,8 +49,9 @@ render(){
     
     return(
     <>
-        <DonateComponent/>
+        
         <HomeCarousel ID="firstCarousel"/>
+        <DonateComponent/>
         <div id="HomeCards" >
             <ArticleContainer id = "firstArticleContainer"  />
             
