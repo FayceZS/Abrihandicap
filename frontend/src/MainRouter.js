@@ -1,6 +1,7 @@
   
 import React from 'react';
-import {Route, Switch} from 'react-router-dom';
+import {HashRouter as Router,Route} from 'react-router-dom';
+import {Switch} from 'react-router-dom';  
 import NavTabs from './Core/Menu';
 import Home from './Core/Home';
 import Contactform from './Components/Forms/contact';
