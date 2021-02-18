@@ -51,13 +51,13 @@ render(){
     <>
         
         <HomeCarousel ID="firstCarousel"/>
-        <DonateComponent/>
+        
         <div id="HomeCards" >
             <ArticleContainer id = "firstArticleContainer"  />
             
            
 
-            <DonateComponent/>
+            
             <div class="cardContainer">
                 
                 <ItemsCarousel />
@@ -71,6 +71,7 @@ render(){
             />
         </div>
         <div id='carouselTeam'>
+        <DonateComponent/>  
         <h3 id="titleTeam">NOTRE EQUIPE</h3>
         <TeamCarousel ID="teamCarousel"/>
         </div>

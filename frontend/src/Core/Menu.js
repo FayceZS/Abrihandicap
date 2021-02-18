@@ -5,6 +5,9 @@ import logoAbri from '../logo.jpg';
 import Dropdown from 'react-bootstrap/Dropdown';
 import DropdownButton from 'react-bootstrap/DropdownButton';
 
+const goPaypal=()=>{
+  window.location.href = 'https://www.paypal.com/donate/?hosted_button_id=FQTUPG9Z9SR3C'
+}
 
 
 
@@ -58,7 +61,7 @@ const Menu = ({history}) => (
 
   
   <Nav.Item>
-    <Nav.Link className='nav2' href='#donateComponent' eventKey="link-1" >Faire un don</Nav.Link>
+    <span className='nav2 nav-link' onClick={goPaypal} eventKey="link-1" >Faire un don</span>
   </Nav.Item>
 
   <Nav.Item>

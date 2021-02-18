@@ -8,6 +8,7 @@ import {
 import {loadStripe} from '@stripe/stripe-js';
 
 
+
 class DonateForm extends Component {
     constructor(){
         super();
@@ -18,6 +19,9 @@ class DonateForm extends Component {
 
       
     }
+
+     
+
 
     handleSubmitForm(event) {
         event.preventDefault();
@@ -90,6 +94,10 @@ class DonateForm extends Component {
                 }
               }
             }};
+
+            const goPaypal=()=>{
+                window.location.href = 'https://www.paypal.com/donate/?hosted_button_id=FQTUPG9Z9SR3C'
+              }
             
 
             return(
@@ -113,12 +121,10 @@ class DonateForm extends Component {
                 </div>
                 <input type="number" name="amount" placeholder="Montant libre" onChange={this.handleChange}></input>
                 {/* onChange={event => this.handleChange(event) */}
-                {this.state.amount > 0 ?  <button
-                className="pay-button"
-                disabled={CheckoutForm.isPaymentLoading}
-              >
-                {CheckoutForm.isPaymentLoading ? "Chargement..." : "Donner"}
-              </button> : ''}
+                
+                <a href='https://www.paypal.com/donate/?hosted_button_id=FQTUPG9Z9SR3C' id="payButton">
+                Donner
+              </a> 
                 </form>
                 
             </div><br></br>

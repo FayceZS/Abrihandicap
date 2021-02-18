@@ -28,12 +28,12 @@ const MainRouter = () => (
             <PrivateRoute exact path='/user/edit/:userId' component={EditProfile}></PrivateRoute>
             <PrivateRoute exact path='/user/:userId' component={Profile}></PrivateRoute>
             <PrivateRoute exact path='/post/createpost' component={NewPost}></PrivateRoute> */}
-            <Route exact path='/' component={Home}></Route>
-            <Route exact path='/contact' component={Contactform}></Route>
-            <Route exact path='/success' component={SuccessPayement}></Route>
-            <Route exact path='/cancel' component={CancelPayement}></Route>
-            <Route exact path='/checkout' component={Checkout}></Route>
-            <Route exact path='/nous-rejoindre' component={Signup}></Route>
+            <Route  path='/' component={Home}></Route>
+            <Route  path='/contact' component={Contactform}></Route>
+            <Route  path='/success' component={SuccessPayement}></Route>
+            <Route  path='/cancel' component={CancelPayement}></Route>
+            <Route  path='/checkout' component={Checkout}></Route>
+            <Route  path='/nous-rejoindre' component={Signup}></Route>
         </Switch>
         <FooterPage/>
     </div>

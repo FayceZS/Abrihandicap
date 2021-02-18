@@ -8,7 +8,7 @@ class ArticleContainerVideo extends Component{
             <div className = 'articleContainer' id = "articleContainerHome">
                     <h2>{this.props.title}</h2>
                     <p>{this.props.text}</p>
-                    <ReactPlayer url="https://youtu.be/x-0fJNCb1LI" id="videoPlayer" style={{margin : "auto"}}/>
+                    <ReactPlayer controls url="https://youtu.be/9iJ_iTx3yjY" id="videoPlayer" style={{margin : "auto"}}/>
             </div>
         )
     }
