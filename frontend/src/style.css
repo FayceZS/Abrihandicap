@@ -619,7 +619,6 @@ svg{
 
 #formContact{
     margin : auto;
-    margin-top : 180px;
     width : 70%;
     height : 600px;
     padding : 40px;
@@ -659,6 +658,34 @@ svg{
 #formContact>button:hover{
     top : 5px;
     box-shadow: 0px 0px 5px 5px rgba(10,19,133,0.75);
+}
+
+#underConstruction{
+    width : 100%;
+    min-height : 700px;
+    background-image: url('./Images/briques.png');
+    display : flex;
+    flex-direction: column;
+    padding : 35px;
+    border-top : 1px solid black;
+}
+
+#underConstruction>h2{
+        font-size : 35px;
+        margin : auto;
+        font-family : "Century gothic regular";
+}
+
+#underConstruction>p{
+    margin : auto;
+    font-family : 'Calibri corps';
+    font-size : 25px;
+}
+
+#constructionImage{
+    height : 400px;
+    width : 400px;
+    margin : auto;
 }
 
 @media all and (max-width : 1025px){
@@ -804,6 +831,33 @@ svg{
 
         .list-styled{
             list-style: none;
+        }
+
+        #constructionImage{
+            width : 200px;
+            height : 200px;
+        }
+
+        #formContact{
+            height : 500px;
+        }
+
+        .imgTeamCarousel{
+            height : 200px;
+            width : 200px;
+        }
+
+        #message{
+            height : 180px;
+        }
+
+        #formContact>button{
+            font-size : 15px;
+            padding : 3px;
+        }
+
+        #formContact>button{
+            border-radius : none;
         }
 
         

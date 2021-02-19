@@ -20,7 +20,7 @@ const FooterPage = () => {
               {/* <h5 className="title" id="liens">Liens</h5> */}
               <ul>
                 <li className="list-styled">
-                  <p  id="presse">Dossier de presse</p>
+                  <a href='/dossier-de-presse'  id="presse">Dossier de presse</a>
                 </li>
                 {/* <li className="list-styled">
                   <a href="#!" id="newsletter">Newsletter</a>
@@ -29,15 +29,15 @@ const FooterPage = () => {
                   <a href="/contact" id="contact">Contact</a>
                 </li>
                 <li className="list-styled">
-                  <a href="#!" id="rejoindre">Nous rejoindre</a>
+                  <a href="/join" id="rejoindre">Nous rejoindre</a>
                 </li>
               </ul>
               <ul >
                 <li className="list-styled">
-                  <p  id="newsletter">Partenaires</p>
+                  <a href='/partners'  id="newsletter">Partenaires</a>
                 </li>
                 <li className="list-styled">
-                  <p id="rejoindre">Autres</p>
+                  <a href='/autres' id="rejoindre">Autres</a>
                 </li>
               </ul>
           </div>

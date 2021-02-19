@@ -30,7 +30,7 @@ class ContactForm extends Component {
     this.setState({ status: "Envoyé" });  
     axios({
       method: "POST",
-      url: "http://localhost:5000/contact",
+      url: "https://oo4uszge89.execute-api.eu-west-1.amazonaws.com/dev/backend/contact",
       data: this.state,
     }).then((response) => {
       if (response.data.status === "sent") {

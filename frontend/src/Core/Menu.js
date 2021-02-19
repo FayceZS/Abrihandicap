@@ -41,7 +41,7 @@ const Menu = ({history}) => (
       </Dropdown.Item>
       <Dropdown.Item>
       <Nav.Item>
-        <Nav.Link href="#carouselTeam" className='nav5' eventKey="link-4">Notre équipe</Nav.Link>
+        <Nav.Link href="#titleTeam" className='nav5' eventKey="link-4">Notre équipe</Nav.Link>
       </Nav.Item>
       </Dropdown.Item>
 
@@ -73,7 +73,7 @@ const Menu = ({history}) => (
   </Nav.Item>
 
   <Nav.Item>
-    <Nav.Link href="#carouselTeam" className='nav5' eventKey="link-4">Notre équipe</Nav.Link>
+    <Nav.Link href="#titleTeam" className='nav5' eventKey="link-4">Notre équipe</Nav.Link>
   </Nav.Item>
   
 </Nav>
